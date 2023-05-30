@@ -1,0 +1,343 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 576px) {
+    .uainde {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .uainde {
+        margin-top: 6px;
+    }
+}
+
+@media (min-width: 576px) {
+    .text-lable {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-lable {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 576px) {
+    .text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 576px) {
+    .addspec-searchinput09 {
+        top: 40px;
+        width: 378px;
+        height: 39px;
+        position: absolute;
+    }
+}
+
+@media (max-width: 576px) {
+    .addspec-searchinput09 {
+        top: 80px;
+        position: absolute;
+        left: 42px;
+    }
+}
+@media (min-width: 576px) {
+    .addspec-rectangle386 {
+        width: 378px;
+        height: 39px;
+    }
+}
+
+@media (max-width: 576px) {
+    .addspec-rectangle386 {
+        width: 300px;
+        height: 34px;
+    }
+}
+
+@media (min-width: 576px) {
+    .addspec-frame198button {
+        left: 334px;
+        width: 44px;
+        height: 39px;
+    }
+}
+
+@media (max-width: 768px) {
+    .addspec-frame198button {
+        left: 268px;
+        width: 36px;
+        height: 34px;
+    }
+}
+
+@media (min-width: 768px) {
+    .addspec-group34494 {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .addspec-group34494 {
+        margin-top: 20px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.text-lable {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+    background: linear-gradient(90deg, #ACB6E5 0%, #86FDE8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.text {
+    position: absolute;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.adding-bottom {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 194px;
+    height: 39px;
+    top: 40px;
+    background: #14B1F0;
+    border-radius: 8px;
+}
+.addspec-rectangle386 {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    border-color: rgba(174, 174, 174, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+}
+
+.addspec-frame198button {
+    gap: 10px;
+    top: 0px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 0 6px 6px 0;
+    border-width: 0px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(181, 181, 181, 1);
+}
+
+.addspec-search {
+    width: 24px;
+    height: 24px;
+}
+
+.addspec-btnaddbutton1 {
+    margin-top: 40px;
+    width: 194px;
+    height: 39px;
+    border-radius: 8px;
+    background-color: rgba(20, 176, 240, 1);
+}
+.addspec-hugeiconinterfacesolidaddcircle {
+    width: 22px;
+    height: 22px;
+}
+
+.addspec-text50 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.gotovospisokspecov-text094 {
+    color: #5C6BC0;
+    height: auto;
+    position: absolute;
+    font-size: 14px;
+    font-style: normal;
+    text-align: left;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    line-height: 24px;
+    font-stretch: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.gotovospisokspecov-text098 {
+    color: rgba(66, 66, 66, 1);
+    font-size: 10px;
+    font-style: normal;
+    text-align: left;
+    font-family: 'Red Hat Display';
+    font-weight: 500;
+}
+
+.gotovospisokspecov-btnbutton1 {
+    width: 147px;
+    height: 33px;
+    border-radius: 8px;
+    background-color: rgba(21, 173, 183, 1);
+    border: hidden;
+}
+
+.gotovospisokspecov-interfaceessential-email21 {
+    padding-bottom: 3px;
+}
+
+.gotovospisokspecov-text096 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 5px;
+    text-transform: uppercase;
+}
+
+.gotovospisokspecov-text100 {
+    color: rgba(66, 66, 66, 0.800000011920929);
+    width: 474px;
+    position: absolute;
+    font-size: 14px;
+    font-style: normal;
+    text-align: left;
+    font-family: 'Red Hat Display';
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.gotovospisokspecov-group34499 {
+    width: 140px;
+    height: 33px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+}
+
+.gotovospisokspecov-text076 {
+    left: 21px;
+    color: rgba(66, 66, 66, 1);
+    width: 120px;
+    height: auto;
+    position: absolute;
+    flex-grow: 1;
+    font-size: 14px;
+    font-style: normal;
+    text-align: left;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.gotovospisokspecov-text078 {
+    top: 17px;
+    left: 22px;
+    color: rgba(66, 66, 66, 0.800000011920929);
+    width: 119px;
+    height: auto;
+    position: absolute;
+    flex-grow: 1;
+    font-size: 14px;
+    font-style: normal;
+    text-align: left;
+    font-family: 'Red Hat Display';
+    font-weight: 500;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.gotovospisokspecov-hugeiconinterfacesolidopenbook {
+    width: 14px;
+    height: 14px;
+}
+
+.gotovospisokspecov-group34503 {
+    width: 71px;
+    height: 24px;
+}
+
+.gotovospisokspecov-interfaceessential-facebook {
+    width: 22px;
+    height: 24px;
+}
+
+.gotovospisokspecov-frame31button1 {
+    gap: 12px;
+    width: 222px;
+    height: 35px;
+    display: flex;
+    padding: 9px 20px 10px 10px;
+    box-shadow: 0px 2px 6px 0px rgba(63, 81, 181, 0.20000000298023224);
+    border-radius: 8px;
+    justify-content: left;
+    background-color: rgba(63, 81, 181, 1);
+    border: hidden;
+}
+
+.gotovospisokspecov-text090 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 14px;
+    font-style: normal;
+    text-align: left;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+}

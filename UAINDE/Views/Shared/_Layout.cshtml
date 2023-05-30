@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - UAINDE</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/UAINDE.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    <main class="main-page">
+        <header class="row " style="border-radius: 20px 20px 0 0; height: 120px; background-color: #03484D;">
+            <div class="col-lg-2 offset-lg-1 col-md-2 offset-md-1 col-1 offset-1 uainde">
+                <a class="text-lable" asp-area="" asp-controller="SearchingCategories" asp-action="Index">UAINDE</a>
+                <p class="text d-none d-sm-block">ПОШУК СПЕЦІАЛІСТІВ В НІМЕЧЧИНІ</p>
+            </div>
+            <div class="col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-3 ">
+                    <form asp-controller="SearchingCategories" asp-action="Index">
+                        <div class="addspec-searchinput09">
+                        <input style="border: 0px;" class="addspec-rectangle386" type="text" name="SearchString" />
+                        <button class="addspec-frame198button" type="submit">
+                            <img src="~/public/playground_assets/searchi476-3qlw.svg"
+                                 alt="searchI476"
+                                 class="addspec-search" />
+                        </button>
+                        </div>
+                    </form>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-3 d-none d-sm-block">
+                <button class="addspec-btnaddbutton1">
+                    <img src="~/public/playground_assets/hugeiconinterfacesolidaddcirclei476-rn2.svg"
+                         alt="HugeiconinterfacesolidaddcircleI476"
+                         class="addspec-hugeiconinterfacesolidaddcircle" />
+                    <span class="addspec-text50">
+                        <span>Додати спеціаліста</span>
+                    </span>
+                </button>
+            </div>
+            <div class="col-lg-2 offset-lg-1 col-md-2 offset-md-1 col-3 offset-2">
+                <div class="row addspec-group34494">
+                    <a class="col-lg-2 col-3 offset-1"  href="#">
+                        <img src="~/public/playground_assets/likeiconbuttoni476-t815.png">
+                    </a>
+                    <a class="col-lg-2 col-3 offset-1" href="#">
+                        <img src="~/public/playground_assets/comboshapei476-vbi.png">
+                    </a>
+                    <a class="col-lg-2 col-3 offset-1" href="#">
+                        <img src="~/public/playground_assets/avatari476-go61-200h.png">
+                    </a>
+                </div>
+            </div>
+        </header>
+            @RenderBody()
+
+            <footer class="border-top footer text-muted">
+                <div class="container">
+                    &copy; 2023 - UAINDE
+                </div>
+            </footer>
+        </main>
+
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,258 @@
+﻿@model IEnumerable<UAINDE.Models.SearchingCategories>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+<div >
+    
+    <table class="table ">
+        <thead>
+        <tr >
+            <th>
+                @Html.DisplayNameFor(model => model.WorkingSphere)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Speciality)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WorkExperience)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SocialNetworkLink)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdditionalInformation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhotoLink)
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WorkingSphere)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Speciality)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WorkExperience) років
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SocialNetworkLink)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AdditionalInformation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhotoLink)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+@foreach (var item in Model) {
+<div class="row">
+    <div class="col-md-2 offset-md-1">
+
+    </div>
+    <div class="col-md-9">
+        <div class="row" style="height: 250px;">
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img
+                            src="~/public/playground_assets/marinai476-jgfm-200h.png"
+                            alt="marinaI476"
+                            class="gotovospisokspecov-marina"
+                        />
+                    </div>
+                    <div class="col-md-12">
+                        <span class="gotovospisokspecov-text094">
+                            <span>@Html.DisplayFor(modelItem => item.FirstName)</span>
+                        </span>
+                    </div>
+                    <div class="col-md-12" style="margin-top: 20px;">
+                        <img
+                            src="~/public/playground_assets/star1i476-v91g.svg"
+                            alt="Star1I476"
+                            class="gotovospisokspecov-star11"
+                        />
+                        <img
+                            src="~/public/playground_assets/star2i476-ylnw.svg"
+                            alt="Star2I476"
+                            class="gotovospisokspecov-star21"
+                        />
+                        <img
+                            src="~/public/playground_assets/star3i476-16e.svg"
+                            alt="Star3I476"
+                            class="gotovospisokspecov-star31"
+                        />
+                        <img
+                            src="~/public/playground_assets/star4i476-3g9.svg"
+                            alt="Star4I476"
+                            class="gotovospisokspecov-star41"
+                        />
+                        <img
+                            src="~/public/playground_assets/star5i476-v3e.svg"
+                            alt="Star5I476"
+                            class="gotovospisokspecov-star51"
+                        />
+                        <span class="gotovospisokspecov-text098">4.5</span>
+                    </div>
+                    <div class="col-md-12">
+                        <button class="gotovospisokspecov-btnbutton1">
+                            <img
+                                src="~/public/playground_assets/interfaceessentialemail2i476-itvi.svg"
+                                alt="InterfaceessentialEmail2I476"
+                                class="gotovospisokspecov-interfaceessential-email21"
+                            />
+                            <a class="gotovospisokspecov-text096" href="tel:+@Html.DisplayFor(modelItem => item.PhoneNumber)">написати</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="gotovospisokspecov-text094">
+                            <span>@Html.DisplayFor(modelItem => item.FirstName) @Html.DisplayFor(modelItem => item.LastName)</span>
+                        </span>
+                    </div>
+                    <div class="col-md-12" style="margin-top: 35px;">
+                        <span class="gotovospisokspecov-text100">
+                            @Html.DisplayFor(modelItem => item.AdditionalInformation)
+                        </span>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row"  style="margin-top: 85px;">
+                            <div class="col-md-3">
+                                <div class="gotovospisokspecov-group34499">
+                                    <span class="gotovospisokspecov-text076">
+                                        <span>@Html.DisplayNameFor(model => model.Speciality)</span>
+                                    </span>
+                                    <span class="gotovospisokspecov-text078">
+                                        <span>@Html.DisplayFor(modelItem => item.Speciality)</span>
+                                    </span>
+                                    <img
+                                        src="~/public/playground_assets/hugeiconinterfacesolidopenbooki476-5vumj.svg"
+                                        alt="HugeiconinterfacesolidopenbookI476"
+                                        class="gotovospisokspecov-hugeiconinterfacesolidopenbook"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-md-3 offset-md-1">
+                                <div class="gotovospisokspecov-group34499">
+                                    <span class="gotovospisokspecov-text076">
+                                        <span>@Html.DisplayNameFor(model => model.WorkExperience)</span>
+                                    </span>
+                                    <span class="gotovospisokspecov-text078">
+                                        <span>@Html.DisplayFor(modelItem => item.WorkExperience) Років</span>
+                                    </span>
+                                    <img
+                                        src="public/playground_assets/subtracti476-fucp.svg"
+                                        alt="SubtractI476"
+                                        class="gotovospisokspecov-hugeiconinterfacesolidopenbook"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-md-4 offset-md-1">
+                                <div class="gotovospisokspecov-group34499">
+                                    <span class="gotovospisokspecov-text076">
+                                        @Html.DisplayNameFor(modelItem => item.City)
+                                    </span>
+                                    <span class="gotovospisokspecov-text078">
+                                        <span>@Html.DisplayFor(modelItem => item.City)</span>
+                                    </span>
+                                    <img
+                                        src="public/playground_assets/comboshapei476-n8ho.svg"
+                                        alt="ComboshapeI476"
+                                        class="gotovospisokspecov-hugeiconinterfacesolidopenbook"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin-top: 37px;">
+                            <button style="border: hidden; background-color: white" onclick="window.location.href = '@Html.DisplayFor(modelItem => item.SocialNetworkLink)';">
+                                <img
+                                    src="public/playground_assets/interfaceessentialfacebooki476-rvtyh.svg"
+                                    alt="InterfaceessentialFacebookI476"
+                                    class="gotovospisokspecov-interfaceessential-facebook"/>
+                            </button>
+                            <button style="border: hidden; background-color: white">
+                                <img
+                                    src="public/playground_assets/interfaceessentialbookmarki476-xzas.svg"
+                                    alt="InterfaceessentialBookmarkI476"
+                                    class="gotovospisokspecov-interfaceessential-facebook"/>
+                            </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 offset-md-1">
+                <div class="row" style="padding-top: 45px">
+                    <div class="col-md-12">
+                        <button class="gotovospisokspecov-frame31button1">
+                                    <img
+                                        src="public/playground_assets/unioni476-f7he.svg"
+                                        alt="UnionI476"
+                                    />
+                            <span class="gotovospisokspecov-text096">
+                                Порекомендувати
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col-md-12" style="padding-top: 15px;">
+                        <button class="gotovospisokspecov-frame31button1">
+                            <img
+                                src="public/playground_assets/hugeiconinterfacesolidlovei476-kesi.svg"
+                                alt="HugeiconinterfacesolidloveI476"
+                            />
+                            <span class="gotovospisokspecov-text096">
+                                Подякувати
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}
